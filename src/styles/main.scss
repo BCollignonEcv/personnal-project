@@ -1,0 +1,75 @@
+html, body, main {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 10vw;
+    z-index: 100;
+}
+
+/*********** COLOR *************/
+
+:root {
+    font-size: 16px;
+    --c-0-100: #fff;
+    --c-0-75: rgba(256, 256, 256, .75);
+    --c-0-50: rgba(256, 256, 256, .5);
+    --c-0-25: rgba(256, 256, 256, .25);
+    --c-1-100: rgb(28, 32, 39);
+    --c-1-75: rgba(28, 32, 39, .75);
+    --c-1-50: rgba(28, 32, 39, .5);
+    --c-1-25: rgba(28, 32, 39, .25);
+    --c-1-10: rgba(28, 32, 39, .10);
+    --c-2-100: rgb(0, 101, 255);
+    --c-2-75: rgba(0, 101, 255, .75);
+    --c-2-50: rgba(0, 101, 255, .5);
+    --c-2-25: rgba(0, 101, 255, .25);
+    --c-3-100: #DF2935;
+    --c-4-100: #04724d;
+    --c-5-100: #525252;
+}
+
+.bg_primary{
+    background-color: var(--c-0-100);
+    color: var(--c-1-100);
+}
+
+.bg_primary_dark{
+    background-color: var(--c-1-100);
+    color: var(--c-0-100);
+}
+
+.bg_secondary{
+    background-color: var(--c-0-100);
+    color: var(--c-2-100);
+}
+
+.bg_secondary_dark{
+    background-color: var(--c-2-100);
+    color: var(--c-0-100);
+}
+
+.bg_error{
+    background-color: var(--c-0-100);
+    color: var(--c-3-100);
+}
+
+.bg_success{
+    background-color: var(--c-0-100);
+    color: var(--c-4-100);
+}
+
+.bg_neutral{
+    background-color: var(--c-0-100);
+    color: var(--c-5-100);
+}
+
+.bg_neutral_dark{
+    background-color: var(--c-5-100);
+    color: var(--c-0-100);
+}
