@@ -1,5 +1,5 @@
 <template>
-    <img :src="`../src/assets/icones/${name}.svg`" :style="sizeStyle" :class="colorClass" class="icone" alt=""
+    <img :src="`/assets/icones/${name}.svg`" :style="sizeStyle" :class="colorClass" class="icone" alt=""
         srcset="">
 </template>
 
