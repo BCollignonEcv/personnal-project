@@ -1,11 +1,12 @@
 {
-  "name": "personnal-project",
+  "name": "project-professionnel",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "pinia": "^2.0.13",
