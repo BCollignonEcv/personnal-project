@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 
-export const useDataStore = defineStore({
-    id: 'data',
+export const useTemplateStore = defineStore({
+    id: 'template',
     state: () => ({
         currentSection: null,
         currentSectionPage: null,

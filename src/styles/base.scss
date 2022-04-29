@@ -1,0 +1,43 @@
+@font-face {
+    font-family: CustomFont;
+    src: url("../assets/fonts/Custom_Coll-DemiBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: CustomFont;
+    src: url("../assets/fonts/Custom_Coll-Light.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: CustomFont;
+    src: url("../assets/fonts/Custom_Coll-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-size: 16px;
+    font-family: "CustomFont";
+    --c-0-100: rgba(256, 256, 256);
+    --c-0-75: rgba(256, 256, 256, 0.75);
+    --c-0-50: rgba(256, 256, 256, 0.5);
+    --c-0-25: rgba(256, 256, 256, 0.25);
+    --c-1-100: #1c2027;
+    --c-1-75: rgba(28, 32, 39, 0.75);
+    --c-1-50: rgba(28, 32, 39, 0.5);
+    --c-1-25: rgba(28, 32, 39, 0.25);
+    --c-1-10: rgba(28, 32, 39, 0.1);
+    --c-2-100: #0065ff;
+    --c-2-75: rgba(0, 101, 255, 0.75);
+    --c-2-50: rgba(0, 101, 255, 0.5);
+    --c-2-25: rgba(0, 101, 255, 0.25);
+    --c-3-100: #df2935;
+    --c-4-100: #04724d;
+    --c-5-100: #525252;
+}
+
+*{
+    box-sizing: border-box;
+}

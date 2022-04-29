@@ -1,5 +1,8 @@
 <template>
   <section :class="classObject">
+      <template>
+          
+      </template>
       <slot name="content"></slot>
       <slot></slot>
   </section>

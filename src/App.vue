@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-    <!-- <Header></Header> -->
+    <Header></Header>
     <main>
       <RouterView />
     </main>
@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss">
 @import '@/styles/reset.scss';
+@import '@/styles/base.scss';
 @import '@/styles/main.scss';
 
 </style>

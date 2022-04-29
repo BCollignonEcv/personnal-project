@@ -1,16 +1,8 @@
 <template>
-    <header>
-        <template v-for="date in dataStore.getTimeline" :key="date.name">
-            <div v-if="!date.noPagination" class="pagination">
-                <h4 class="link link_title">{{ date.name }}</h4>
-                <template v-for="page in date.pages" :key="page">
-                    <p class="link link_item">
-                        {{ page.title }}
-                    </p>
-                    <!-- <a class="link link_item">____</a> -->
-                </template>
-            </div>
-        </template>
+    <header class="container">
+        <h1 class="col-2">Baptiste Collignon</h1>
+        <h2 class="col-8">{{ dataStore.getTitle }}</h2>
+        <p class="col-2 alignRight">{{ todayDate }}</p>
     </header>
 </template>
 
@@ -18,44 +10,44 @@
 import { useDataStore } from '@/stores/Data.store'
 
 export default {
+    data() {
+        return {
+        }
+    },
     setup() {
         const dataStore = useDataStore();
-        return { dataStore }
+        return {
+            dataStore
+        }
+    },
+    computed: {
+        todayDate: () => {
+            let today = new Date();
+            return today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+        }
     },
 }
 </script>
 
 <style lang="scss" scoped>
+.container {
+    @include container;
+    justify-content: space-between;
+}
+
 header {
-    pointer-events: none;
-}
+    height: $header-height;
+    align-items: center;
+    z-index: 100;
 
-h4,
-p {
-    pointer-events: all;
-}
-
-.pagination {
-    .link {
-        &:hover {
-            color: blue;
-            cursor: pointer;
-            padding-left: 10px;
-        }
-
-        &.link_title {
-            padding: 20px 0;
-        }
-
-        &.link_item {
-            width: 30px;
-            padding: 20px;
-            display: block;
-
-            &:hover {
-                color: blue;
-            }
-        }
+    h1,
+    h2,
+    p {
+        margin: auto $margin-medium;
+        font-size: $font-small;
+        line-height: $font-small;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
 </style>
